@@ -1,0 +1,467 @@
+@charset "UTF-8";
+/* Обнуление */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: normal;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(../fonts/Oswald-Medium.ttf);
+}
+@font-face {
+  font-family: "OswaldL";
+  src: url(../fonts/Oswald-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Pacifico";
+  src: url(../fonts/Pacifico-Regular.ttf);
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: url("../img/bg-1.jpg") top center/cover no-repeat fixed;
+}
+
+.fullscreen {
+  min-height: 100vh;
+  display: flex;
+  background-color: transparent;
+  padding: 50px 0;
+}
+
+.navbar-sushi {
+  display: flex;
+  align-items: center;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.nav-logo {
+  margin-right: 10px;
+  width: 80px;
+  height: 60px;
+  background: url("../img/logo.png") center no-repeat;
+}
+
+.nav-title {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-size: 34px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+.nav-title span {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+
+.nav-item {
+  padding-left: 50px;
+}
+
+.nav-link {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: #b71a25;
+}
+
+.wellcome {
+  width: 100%;
+  padding: 200px 0px 0px 0px;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+.wellcome__title {
+  font-style: normal;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+.wellcome__text {
+  font-size: 70px;
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+.wellcome__buttons {
+  margin-top: 30px;
+}
+
+.btn-order {
+  padding: 20px;
+  margin-right: 10px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  background-color: #b71a25;
+  border-color: #b71a25;
+}
+
+.btn-order:hover {
+  background-color: #434f53;
+  color: #fff;
+  border-color: #434f53;
+}
+
+.btn-viewmenu {
+  padding: 20px;
+  margin-left: 10px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #1b1f28;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-viewmenu:hover {
+  color: #b71a25;
+}
+
+.ourmenu {
+  background-color: #fff;
+  padding: 70px 0px;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "OswaldL", sans-serif;
+}
+.ourmenu__title {
+  color: #1b1f28;
+  font-size: 50px;
+  line-height: 1.1;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.ourmenu__card {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 0px 5px;
+}
+.ourmenu__card-body {
+  padding: 40px 150px 40px 40px;
+}
+.ourmenu__card-name {
+  font-size: 30px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+.ourmenu__card-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+.ourmenu__sep {
+  height: 20px;
+}
+.ourmenu__btn {
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  padding: 16px 25px;
+  color: #fff;
+}
+.ourmenu__btn:hover {
+  background-color: #b71a25;
+  border-color: #b71a25;
+  color: #fff;
+}
+
+.ourmenu-sushi {
+  background-image: url("../img/ourmenu-1.jpg");
+}
+
+.ourmenu-salads {
+  background-image: url("../img/ourmenu-2.jpg");
+}
+
+.ourmenu-rice {
+  background-image: url("../img/ourmenu-3.jpg");
+}
+
+.ourmenu-drinks {
+  background-image: url("../img/ourmenu-4.jpg");
+}
+
+.tasty {
+  background: url("../img/bg-2.jpg") top center/cover no-repeat fixed;
+  padding: 140px 0;
+}
+.tasty__body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.tasty__title {
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Oswald", sans-serif;
+  color: #b71a25;
+  font-size: 70px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+.tasty__slogan {
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Pacifico", serif;
+  color: #f2ebbd;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.reasons {
+  background-color: #fff;
+  padding: 70px 0px;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "OswaldL", sans-serif;
+}
+.reasons__title {
+  font-size: 50px;
+  line-height: 1.1;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.reasons__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.reasons__item-title {
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.reasons__text {
+  color: #1b1f28;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+.better {
+  padding: 0;
+  font-size: 16px;
+  background-color: #1b1f28;
+}
+.better__offer {
+  padding: 50px 0;
+}
+.better__bg {
+  background-image: url("../img/bg-3.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.better__offer-title {
+  font-family: "OswaldL", sans-serif;
+  color: #fff;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.offer__item {
+  border-bottom: 1px solid #666;
+  font-family: "OswaldL", sans-serif;
+  color: #fff;
+  margin-right: 10px;
+  padding-top: 20px;
+}
+.offer__item-name {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.offer__item-price {
+  font-size: 25px;
+  text-align: right;
+}
+.offer__item-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: #ccc;
+  padding: 20px 0;
+}
+
+.gallery {
+  background-color: #fff;
+  padding: 50px 0;
+}
+.gallery__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gallery__items {
+  flex: 1 1 auto;
+  padding: 10px;
+}
+.gallery__image {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts {
+  background-color: #eee;
+  font-family: "OswaldL", sans-serif;
+  color: #000;
+  font-weight: 300;
+}
+.contacts__body {
+  padding: 70px 0 70px 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contacts__title {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.contacts__text-title {
+  padding-top: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.contacts__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+.contacts__map {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer {
+  background-color: #000;
+  padding: 50px 0;
+}
